@@ -13,7 +13,7 @@ for i in range(len(num)):
 for i in range(len(num)-1):
   if((num[i+1] != 7) or (num[i+1] != 9)):
      n=((num[i] -1)%3)
-     op.append(alpha[(num[i+1] -2)][n])
+     op.append(alpha[(alpha[i+1] -2)][n])
   else:
      n=((num[i] -1)%4)
      op.append(alpha[(num[i+1] -2)][n])
